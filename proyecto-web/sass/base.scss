@@ -1,0 +1,112 @@
+//--Base Normal
+
+//----General----//
+
+html {
+  position: relative;
+  min-height: 100%;
+
+  body{
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 50px;
+  }
+}
+
+
+//footer
+
+.footer-base{
+  background-color:#343a40;
+  height: 50px;
+  position: absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:17px 0;
+
+  p{
+    color:#FFFFFF;
+    text-align:center;
+    font-size:12px;
+    margin:0;
+  }
+}
+
+//PRELOADER
+
+#loader-wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: -prefix-linear-gradient(top, blue, white);
+  background:	linear-gradient(to bottom, blue, white);
+
+  #loader{
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    margin: -50px 0 0 -50px;
+    border: 6px solid #556270;
+    z-index: 150;
+    //ANIMACION
+    -webkit-animation: giro 10s linear infinite;
+    animation: giro 10s linear infinite;
+
+    &:before{
+      content:"";
+      position:	absolute;
+      top: 5px;
+      left: 5px;
+      right: 5px;
+      bottom: 5px;
+      border: 4px solid #4ECDC4;
+      //ANIMACION
+      -webkit-animation: giro 5s reverse infinite;
+			animation: giro 5s linear infinite;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+      border: 2px solid #C7F464;
+      //ANIMACION
+      -webkit-animation: giro 2s linear infinite;
+			animation: giro 2s linear infinite;
+    }
+  }
+}
+//--animcacion
+@-webkit-keyframes giro {
+    0%{
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100%{
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+@keyframes giro {
+    0%{
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100%{
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}

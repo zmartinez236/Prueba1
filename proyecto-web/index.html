@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!--CSS-->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/base.css">
+
+		<!--Google Fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+		<!--Fontawesome-->
+		<script defer src="js/all.js"></script>
+
+		<!--title-->
+		<title>BASE</title>
+
+	</head>
+
+	<body>
+
+	<header class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">
+			BASE
+		</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toogle-prueba" aria-controls="toogle-prueba" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse " id="toogle-prueba">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#l">Menu 1</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="prueba">
+						Menu 2
+					</a>
+					<div class="dropdown-menu" aria-labelledby="prueba">
+						<a class="dropdown-item" href="#">
+							Option 1
+						</a>
+						<a class="dropdown-item" href="#">
+							Option 2
+						</a>
+						<a class="dropdown-item" href="#">
+							Option 3
+						</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#l">Menu 3</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1>Título contenido</h1>
+				<p>Muy lejos, más allá de las montañas de palabras, alejados de los países de las vocales y las consonantes, viven los textos simulados. Viven aislados en casas de letras, en la costa de la semántica, un gran océano de lenguas. Un riachuelo llamado Pons fluye por su pueblo y los abastece con las normas necesarias. Hablamos de un país paraisomático en el que a uno le caen pedazos de frases asadas en la boca. Ni siquiera los todopoderosos signos de puntuación dominan a los textos simulados; una vida, se puede decir, poco ortográfica. </p>
+				<br>
+				<a class="btn btn-info" href="#" data-toggle="modal" data-target="#modal-prueba-blockui" data-backdrop="static" data-keyboard="false">Modal prueba</a>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-12">
+			
+				<div class="box-agregar-art" style="display:none;">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="form-group">
+								<label>PErro</label>
+								<select class="form-control">
+									<option>Opción 1</option>
+									<option>Opción 2</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label>PErro</label>
+								<select class="form-control">
+									<option>Opción 1</option>
+									<option>Opción 2</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label>PErro</label>
+								<select class="form-control">
+									<option>Opción 1</option>
+									<option>Opción 2</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-8">
+							<div class="form-group">
+								<label>Perro</label>
+								<input type="text" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-2">
+							<label>Perro</label>
+							<div class="input-group mb-3">
+							  <div class="input-group-prepend">
+								<span class="input-group-text">$</span>
+							  </div>
+							  <input type="text" class="form-control" aria-label="">
+							  <div class="input-group-append">
+								<span class="input-group-text">.00</span>
+							  </div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<label>Perro</label>
+							<div class="input-group mb-3">
+							  <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon2">
+							  <div class="input-group-append">
+								<span class="input-group-text" id="basic-addon2">pza</span>
+							  </div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 text-right">
+							<button class="btn btn-primary">Aceptar</button>
+							<button id="ocultar-caja" class="btn btn-default">Cancelar</button>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+		
+		</div>
+		
+		<div class="row">
+			<div class="col-md-12">
+				<button id="mostrar-caja" class="btn btn-primary">Mostrar</button>
+			</div>
+		</div>
+	</div>
+	
+	
+<style>
+
+.box-dona {
+  background-color: #ff8033;
+  width: 100%;
+  height: 16rem;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  /*oculto*/display:none;
+}
+.box-dona .dona {
+  position: absolute;
+  width: 13rem;
+  height: 13rem;
+  border-radius: 90%;
+  border: 1rem solid #00619C;
+  bottom: -14rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition:all 1s ease;
+}
+.box-dona .dona.show {
+  bottom: 1.4rem;
+}
+
+</style>	
+	
+	
+	<div class="container mt-5 mb-5">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="box-dona">
+					<div class="dona"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--modal de prueba-->
+	<div class="modal fade modal-gmmb" id="modal-prueba-blockui" tabindex="-1" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLabel">Importante</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			Contenido del body.
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+			<button type="button" class="btn btn-success">Aceptar</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+	<!--fin-->
+
+	<footer class="footer-base">
+		<p>Base 2018</p>
+	</footer>
+
+
+    <!-- JS-->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/base.js"></script>
+	
+	<script>
+	
+		$(".box-dona").on('click',function(){
+			$(".dona").toggleClass("show"); 
+		});
+	
+	</script>
+	
+	<script>
+	
+	
+		$('#mostrar-caja').click(function(){
+			$('.box-agregar-art').toggle('slow');
+			$('#mostrar-caja').css('display', 'none');
+		});
+		
+		
+		$('#ocultar-caja').click(function(){
+			$('.box-agregar-art').toggle('slow');
+			$('#mostrar-caja').css('display', 'block');
+		});
+
+	
+	</script>
+
+	</body>
+</html>
